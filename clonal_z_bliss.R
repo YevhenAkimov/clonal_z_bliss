@@ -176,7 +176,7 @@ clonal_interaction_z=function(
 
 clonal_interaction_z=function(
     R1, R2, RC, sizes, t,synergy_type="clonal_synergy_ratio",calculate_relative_to_Baseline="relative",scaling= FALSE,
-    n_perm = 1000, eps = 1e-12, dev.output=F
+    n_perm = 100, eps = 1e-12, dev.output=F
 ) {
   
   bliss=clonal_synergy(
@@ -203,7 +203,7 @@ clonal_interaction_z=function(
 }
 
 clonal_z_bliss=function(
-    R1, R2, RC, sizes, t , n_perm = 1000, eps = 1e-12, dev.output=F
+    R1, R2, RC, sizes, t , n_perm = 100, eps = 1e-12, dev.output=F
 ) {
   
   bliss=clonal_synergy(
